@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Daftar Buku Favorit</h1>
+    </header>
+
+    <section id="inputSection">
+        <label for="bookCount">Masukkan jumlah buku yang ingin ditampilkan:</label>
+        <input type="number" id="bookCount" min="1" placeholder="Jumlah Buku" />
+        <button onclick="showBooks()">Tampilkan Buku</button>
+    </section>
+
+    <section id="userInfo">
+        <p>Jumlah buku yang diminta: <span id="userBookCount">0</span></p>
+        <p>Rata-rata jumlah buku yang diminta: <span id="average">0</span></p>
+    </section>
+
+    <section class="book-list" id="bookList">
+        <!-- Daftar buku akan ditampilkan di sini -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Daftar Buku</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
